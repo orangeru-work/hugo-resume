@@ -1,4 +1,4 @@
 ---
-title: Resume
+title: Resume - Ina Halva Resumay
 type: resume
 ---
