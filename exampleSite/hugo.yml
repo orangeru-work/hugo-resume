@@ -1,4 +1,5 @@
-baseURL: 'https://hugo-resume.orangeru.work/'
+baseURL: '/'
+relativeURLs: true
 languageCode: 'en-us'
 title: 'My Resume Site'
 
@@ -8,9 +9,19 @@ params:
 module:
   imports:
     - path: github.com/spf13/hyde
-    - path: github.com/orangeru-work/hugo-resume
+    - path: github.com/bakerag1/hugo-resume
 
 menus:
   main:
-    - Name: Resume
+    - Name: Default Style
       URL: /resume
+      weight: 10
+    - Name: Stark Style
+      URL: /resume-stark
+      weight: 20
+    - Name: Manager Resume (Stark)
+      URL: /resume-mgr
+      weight: 30
+    - Name: Tech Lead Resume (Default)
+      URL: /resume-tech
+      weight: 40
