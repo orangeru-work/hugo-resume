@@ -1,0 +1,67 @@
+title: Ina Halva Resumay
+tagline: |
+  Principal Staff Engineer specializing in high-throughput distributed systems, Go, Kubernetes, and cloud-native architecture.
+location: Anytown, USA
+links:
+  - label: website
+    display: ina.example.org
+    url: https://ina.example.org
+  - label: github
+    display: iresumay
+    url: https://example.org
+  - label: linkedin
+    display: iresumay
+    url: https://example.org
+private:
+  phone: (555)555-5555
+  email: ina@example.org
+highlights: 
+  - Distributed Systems Architecture
+  - Go / Rust / Python
+  - Kubernetes & Cloud Native
+  - High Performance Computing
+accomplishments:
+  - Designed and authored high-performance streaming engine processing 500k+ events/second
+  - Built Hugo static site generator open-source modules downloaded over 100k+ times
+  - Reduced API p99 latency from 240ms to 18ms across all core microservices
+personal: |
+  Active open-source maintainer, compiler enthusiast, and technical writer.
+experience:
+  - company: High Throughput Labs
+    title: Principal Software Architect
+    location: Remote
+    begin: Feb 2023
+    end: Present
+    description: |
+      Architecting enterprise telemetry pipelines and distributed data stores:
+      * Designed zero-allocation Go parser handling multi-gigabit network packet ingestion
+      * Led company-wide adoption of gRPC, protobuf, and OpenTelemetry standards
+  - company: Cloud Scale Innovations
+    title: Staff Software Engineer
+    location: Phoenix, AZ
+    begin: Aug 2018
+    end: Jan 2023
+    description: |
+      Core engine developer for cloud infrastructure platform:
+      * Built custom Kubernetes controllers and CRDs to automate database failovers
+      * Authored core performance benchmarking tools used across 30+ product teams
+skills:
+  main:
+    - Go
+    - Kubernetes
+    - Distributed Systems
+    - gRPC & Protobuf
+  working:
+    - Rust
+    - PostgreSQL & Redis
+    - OpenTelemetry
+    - Hugo & Web Performance
+education:
+  - school: Institute of Technology
+    location: Cambridge, MA
+    begin: Sept 2010
+    end: May 2014
+    degree: B.S. Computer Science & Engineering
+certifications:
+  - name: Certified Kubernetes Administrator (CKA)
+  - name: AWS Certified DevOps Engineer - Professional

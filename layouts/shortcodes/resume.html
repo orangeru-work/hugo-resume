@@ -1,26 +1,25 @@
-{{ define "main" -}}
-<div class="main-content">
-  <h1>{{ .Title }}</h1>
+
+{{ $style := .Get "style" | default .Page.Params.style | default $.Site.Params.resumeStyle | default "default" }}
+{{ if eq $style "default" }}
+<link rel="stylesheet" type="text/css" href="{{ "css/resume.css" | relURL }}">
+{{ else }}
+<link rel="stylesheet" type="text/css" href="{{ (printf "css/styles/%s.css" $style) | relURL }}">
+{{ end }}
+<link rel="stylesheet" type="text/css" href="{{ "css/custom-resume.css" | relURL }}">
+<div class="post">
   {{ $data := $.Site.Data.resumebase }}
-  {{ if .Params.Data }}
-    {{ if eq .Params.Data "bundle" }}
-      {{ with .CurrentSection.Resources.Get "resume.yaml" }}
+  {{ if .Params }}
+    {{ if eq .Params.data "bundle" }}
+      {{ with .Page.CurrentSection.Resources.Get "resume.yaml" }}
         {{ with . | transform.Unmarshal }}
           {{ $data = . }}
         {{ end }}
       {{ end }}
     {{ else }}
-      {{ $data = (index $.Site.Data .Params.Data) }}
+      {{ $data = (index $.Site.Data .Page.Params.Data) }}
     {{ end }}
   {{ end }}
   {{ with $data }}
-  {{ $style := $.Params.style | default $.Site.Params.resumeStyle | default "default" }}
-  {{ if eq $style "default" }}
-  <link rel="stylesheet" type="text/css" href="{{ "css/resume.css" | relURL }}">
-  {{ else }}
-  <link rel="stylesheet" type="text/css" href="{{ (printf "css/styles/%s.css" $style) | relURL }}">
-  {{ end }}
-  <link rel="stylesheet" type="text/css" href="{{ "css/custom-resume.css" | relURL }}">
 
 
   <div style="text-align: right;">
@@ -33,7 +32,7 @@
           <p class="title">{{ .title }}</p>
           <p style="text-align: center; font-size: large;">
             {{ with .highlights }}
-            {{ delimit . " | " }}
+              {{ delimit . " | " }}
             {{ end }}
           </p>
         </td>
@@ -123,5 +122,5 @@
 
   </div>
 </div>
-{{ end }}
-{{- end }}
+
+{{end}}

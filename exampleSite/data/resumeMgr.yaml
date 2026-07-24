@@ -1,0 +1,67 @@
+title: Ina Halva Resumay
+tagline: |
+  Strategic Engineering Manager with 10+ years of experience scaling distributed software teams, optimizing delivery velocity, and fostering inclusive engineering culture.
+location: Anytown, USA
+links:
+  - label: website
+    display: ina.example.org
+    url: https://ina.example.org
+  - label: linkedin
+    display: iresumay
+    url: https://example.org
+  - label: github
+    display: iresumay
+    url: https://example.org
+private:
+  phone: (555)555-5555
+  email: ina@example.org
+highlights: 
+  - Team Building & Leadership
+  - Agile Delivery & Operations
+  - Strategic Technical Vision
+  - Budget & Resource Management
+accomplishments:
+  - Scaled engineering organization from 12 to 45 engineers across 4 cross-functional teams
+  - Reduced annual cloud infrastructure costs by 35% through architectural optimization
+  - Improved release frequency from monthly to multi-daily deployments with 99.99% uptime
+personal: |
+  Passionate about tech mentorship, speaking at engineering management meetups, and open-source sustainability.
+experience:
+  - company: Enterprise Cloud Systems
+    title: Engineering Manager
+    location: Tempe, AZ
+    begin: Jan 2024
+    end: Present
+    description: |
+      Leading core infrastructure and platform engineering teams:
+      * Managed a headcount of 18 senior engineers and team leads across 2 continents
+      * Implemented OKRs and developer experience metrics, increasing sprint completion rates by 40%
+      * Mentored 5 senior engineers into tech lead and engineering manager roles
+  - company: Scale Up Solutions
+    title: Software Engineering Lead
+    location: Phoenix, AZ
+    begin: Mar 2019
+    end: Dec 2023
+    description: |
+      Led technical roadmap and architectural design for enterprise platform services:
+      * Spearheaded migration from monolithic monolith to event-driven microservices architecture
+      * Reduced customer onboarding latency by 65% through automated workflow pipelines
+skills:
+  main:
+    - Engineering Leadership
+    - Organizational Design
+    - Agile / Scrum
+    - Performance Management
+  working:
+    - Distributed Systems Architecture
+    - Cloud Cost Optimization
+    - CI/CD & DevOps Strategy
+education:
+  - school: College University
+    location: Boston, MA
+    begin: Sept 2010
+    end: May 2014
+    degree: B.S. Computer Science
+certifications:
+  - name: Certified ScrumMaster (CSM)
+  - name: AWS Certified Solutions Architect - Associate

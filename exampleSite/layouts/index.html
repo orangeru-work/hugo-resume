@@ -1,6 +1,50 @@
 {{ define "main" -}}
-<div class="posts">
-  <h2><a href="/resume">Sample Resume</a></h2>
-  <h2><a href="https://github.com/orangeru-work/hugo-resume">Repository</a></h2>
+<div class="hugo-resume-hero" style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 2px solid #e2e8f0;">
+  <h1 style="font-size: 2.2rem; margin-bottom: 0.5rem; color: #0f172a;">Hugo Resume Module</h1>
+  <p style="font-size: 1.1rem; color: #475569; line-height: 1.6;">
+    A data-driven, printable resume module for Hugo. Separate your resume content from presentation and easily switch between multiple visual styles or data targets.
+  </p>
+  <div style="margin-top: 1rem;">
+    <a href="https://github.com/orangeru-work/hugo-resume" class="btn" style="display: inline-block; background: #0284c7; color: white; padding: 0.5rem 1.25rem; border-radius: 6px; text-decoration: none; font-weight: 600;">
+      GitHub Repository ➔
+    </a>
+  </div>
 </div>
+
+<h2 style="font-size: 1.5rem; color: #0f172a; margin-top: 2rem; margin-bottom: 1rem;">Live Style & Data Demos</h2>
+<div class="demo-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem;">
+  
+  <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; box-shadow: 0 2px 4px rgba(0,0,0,0.04);">
+    <h3 style="margin-top: 0; margin-bottom: 0.4rem;"><a href="{{ "resume" | relURL }}" style="color: #0284c7; text-decoration: none;">Default Style</a></h3>
+    <p style="font-size: 0.95rem; color: #64748b; margin-bottom: 0.75rem;">Classic Georgia serif layout with traditional blue section block headers.</p>
+    <a href="{{ "resume" | relURL }}" style="font-weight: 600; font-size: 0.9rem; color: #0284c7;">View Demo ➔</a>
+  </div>
+
+  <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; box-shadow: 0 2px 4px rgba(0,0,0,0.04);">
+    <h3 style="margin-top: 0; margin-bottom: 0.4rem;"><a href="{{ "resume-stark" | relURL }}" style="color: #0284c7; text-decoration: none;">Stark Style</a></h3>
+    <p style="font-size: 0.95rem; color: #64748b; margin-bottom: 0.75rem;">Modern sans-serif typography with clean slate/sky accents and underline section headers.</p>
+    <a href="{{ "resume-stark" | relURL }}" style="font-weight: 600; font-size: 0.9rem; color: #0284c7;">View Demo ➔</a>
+  </div>
+
+  <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; box-shadow: 0 2px 4px rgba(0,0,0,0.04);">
+    <h3 style="margin-top: 0; margin-bottom: 0.4rem;"><a href="{{ "resume-mgr" | relURL }}" style="color: #0284c7; text-decoration: none;">Manager Resume (Stark)</a></h3>
+    <p style="font-size: 0.95rem; color: #64748b; margin-bottom: 0.75rem;">Demonstrates custom data targeting (<code>data: resumeMgr</code>) using the Stark visual style.</p>
+    <a href="{{ "resume-mgr" | relURL }}" style="font-weight: 600; font-size: 0.9rem; color: #0284c7;">View Demo ➔</a>
+  </div>
+
+  <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; box-shadow: 0 2px 4px rgba(0,0,0,0.04);">
+    <h3 style="margin-top: 0; margin-bottom: 0.4rem;"><a href="{{ "resume-tech" | relURL }}" style="color: #0284c7; text-decoration: none;">Tech Lead Resume (Default)</a></h3>
+    <p style="font-size: 0.95rem; color: #64748b; margin-bottom: 0.75rem;">Demonstrates custom data targeting (<code>data: resumeTech</code>) using the Default serif style.</p>
+    <a href="{{ "resume-tech" | relURL }}" style="font-weight: 600; font-size: 0.9rem; color: #0284c7;">View Demo ➔</a>
+  </div>
+
+</div>
+
+<h2 style="font-size: 1.5rem; color: #0f172a; margin-top: 2rem; margin-bottom: 1rem;">Key Features</h2>
+<ul style="line-height: 1.8; color: #334155; padding-left: 1.25rem;">
+  <li><strong>Separation of Data & Presentation:</strong> Keep your resume details structured in YAML and manage styling independently.</li>
+  <li><strong>Multiple Built-In Styles:</strong> Choose between <code>default</code> and <code>stark</code> themes or supply custom CSS overrides.</li>
+  <li><strong>Print & PDF Optimized:</strong> Dedicated print stylesheets with page-break rules preventing orphan section headers and broken entry blocks.</li>
+  <li><strong>ATS Friendly:</strong> Clean, semantic HTML structure designed for high Applicant Tracking System compatibility.</li>
+</ul>
 {{- end }}
